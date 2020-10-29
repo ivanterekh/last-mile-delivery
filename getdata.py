@@ -52,7 +52,7 @@ for i in range(len(shop_addresses)):
 filename = 'full_info.csv'
 
 # запись в файл
-with open(filename, "w", newline="") as file:
+with open(filename, "w", newline="", encoding="utf-8") as file:
     header = ['countryCode', 'countryName', 'state', 'county', 'city', 'street', 'postalCode', 'houseNumber', 'lat',
               'lng']
     writer = csv.DictWriter(file, fieldnames=header)
