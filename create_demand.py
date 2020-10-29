@@ -41,10 +41,10 @@ df = df.drop(columns=['countryCode', 'countryName', 'state', 'county', 'city', '
 # In[108]:
 
 
-lb_avg_dem = [3100, 350, 4200, 1200, 1050, 130]
-ub_avg_dem = [3400, 400, 4500, 1250, 1100, 160]
-lb_d = [50, 15, 100, 10, 25, 20]
-ub_d = [100, 25, 150, 20, 40, 30]
+lb_avg_dem = [440, 50, 600, 170, 150, 15]
+ub_avg_dem = [490, 60, 650, 180, 160, 25]
+lb_d = [0, 0, 15, 3, 10, 0]
+ub_d = [40, 10, 55, 5, 35, 5]
 days = 7
 products = 6
 
