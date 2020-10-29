@@ -18,27 +18,44 @@ class Dist:
             distance = 'duration'
         return directions[0]['legs'][0][distance]['value']
 
+
 # In[]
+# init api and load data
 dotenv.load_dotenv(".env")
 
 apikey = os.getenv('GOOGLE_API_KEY')
 distApi = Dist(apikey)
 
-df = pd.read_csv('full_info.csv')
+stores = pd.read_csv('full_info.csv')
+satellites = pd.read_csv('satellites.csv')
 
-df = df.head(5)
-n = len(df)
+stores = stores.head(7)
+satellites = satellites.head(3)
+n = len(stores)
+m = len(satellites)
 
 # In[]
+# get distances between stores
 dist = np.zeros((n, n))
 
 for i in range(n):
     for j in range(n):
         if i != j:
-            a = str(df['lat'][i]) + ", " + str(df['lng'][i])
-            b = str(df['lat'][j]) + ", " + str(df['lng'][j])
+            a = str(stores['lat'][i]) + ", " + str(stores['lng'][i])
+            b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
             dist[i][j] = distApi.get_dist(a, b)
 print(dist)
 
 # In[]
 np.savetxt("dist.txt", dist, "%5d")
+
+# In[]
+# get distances between stores and satelites
+distStrSat = np.zeros((m, n))
+
+for i in range(m):
+    for j in range(n):
+        a = satellites['location'][i]
+        b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
+        distStrSat[i][j] = distApi.get_dist(a, b)
+print(distStrSat)
