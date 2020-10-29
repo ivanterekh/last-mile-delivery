@@ -26,7 +26,7 @@ def create_demand_parameters(lb_avg_demand, ub_avg_demand, lb_dev, ub_dev):
 # In[105]:
 
 
-df = pd.read_csv('full_info.csv', encoding='cp1251')
+df = pd.read_csv('full_info.csv')
 
 # In[106]:
 
@@ -101,4 +101,6 @@ total_demand = total_demand.set_index(['key_adr', 'product']).sort_index()
 # In[116]:
 
 
-total_demand
+print(total_demand.info())
+print(total_demand.describe())
+
