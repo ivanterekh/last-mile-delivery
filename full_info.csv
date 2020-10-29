@@ -1,16 +1,16 @@
 countryCode,countryName,state,county,city,street,postalCode,houseNumber,lat,lng
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Mantazhnikaw,220019,2,53.87159,27.41631
-BLR,Belarus,Minsk,Minsk,Minsk,проспект Дзержинского,220036,104,53.86182,27.4825
+BLR,Belarus,Minsk,Minsk,Minsk,РїСЂРѕСЃРїРµРєС‚ Р”Р·РµСЂР¶РёРЅСЃРєРѕРіРѕ,220036,104,53.86182,27.4825
 BLR,Belarus,Minsk,Minsk,Minsk,praspyekt Lyubimava,220000,26,53.86167,27.45931
-BLR,Belarus,Minsk,Minsk,Minsk,проспект Независимости,220114,74,53.92246,27.60239
+BLR,Belarus,Minsk,Minsk,Minsk,РїСЂРѕСЃРїРµРєС‚ РќРµР·Р°РІРёСЃРёРјРѕСЃС‚Рё,220114,74,53.92246,27.60239
 BLR,Belarus,Minsk,Minsk,Minsk,praspyekt Pyeramozhtsaw,220035,89,53.93348,27.50366
 BLR,Belarus,Minsk,Minsk,Minsk,praspyekt Pyeramozhtsaw,220035,9,53.90934,27.54931
 BLR,Belarus,Minsk,Minsk,Minsk,praspyekt Pushkina,220000,3A,53.89678,27.49717
 BLR,Belarus,Minsk,Minsk,Minsk,praspyekt Pushkina,220000,75,53.91848,27.49624
-BLR,Belarus,Minsk,Minsk,Minsk,проспект Рокоссовского,220094,99,53.86104,27.61378
-BLR,Belarus,Minsk,Minsk,Minsk,проспект Рокоссовского,220094,145б,53.856,27.61133
+BLR,Belarus,Minsk,Minsk,Minsk,РїСЂРѕСЃРїРµРєС‚ Р РѕРєРѕСЃСЃРѕРІСЃРєРѕРіРѕ,220094,99,53.86104,27.61378
+BLR,Belarus,Minsk,Minsk,Minsk,РїСЂРѕСЃРїРµРєС‚ Р РѕРєРѕСЃСЃРѕРІСЃРєРѕРіРѕ,220094,145Р±,53.856,27.61133
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Rotmistrava,220075,42,53.84405,27.69539
-BLR,Belarus,Minsk,Minsk,Minsk,проспект Независимости,220114,48,53.91401,27.58128
+BLR,Belarus,Minsk,Minsk,Minsk,РїСЂРѕСЃРїРµРєС‚ РќРµР·Р°РІРёСЃРёРјРѕСЃС‚Рё,220114,48,53.91401,27.58128
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Staravilyenski Trakt,220053,28,53.92802,27.54446
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Staravilyenski Trakt,220053,77,53.931,27.54317
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Alibyehava,220116,13/1,53.87177,27.474
@@ -29,7 +29,7 @@ BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Uladzislava Halubka,220055,2,53.92632,27.4
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Varanyanskaha,220007,17,53.87782,27.54724
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Hyeroyaw 120-y Dyvizi,220056,21,53.94304,27.71997
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Haladzyeda,220096,7/2,53.83703,27.62284
-BLR,Belarus,Minsk,Minsk,Minsk,улица Максима Горецкого,220000,73,53.89161,27.43838
+BLR,Belarus,Minsk,Minsk,Minsk,СѓР»РёС†Р° РњР°РєСЃРёРјР° Р“РѕСЂРµС†РєРѕРіРѕ,220000,73,53.89161,27.43838
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Yakubava,220000,64,53.86213,27.58766
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Yasyenina,220000,141,53.86471,27.42786
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Yasyenina,220000,76,53.86137,27.4437
@@ -46,14 +46,14 @@ BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Lyawkova,220007,9,53.88064,27.55632
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Labanka,220136,22,53.90187,27.4353
 BLR,Belarus,Minsk,Minsk,Minsk,Lozhynskaya vulitsa,220125,22,53.95202,27.68248
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Mazurava,220136,24,53.89597,27.42233
-BLR,Belarus,Minsk,Minsk,Minsk,улица Маршала Люсика,220078,34,53.87419,27.44236
+BLR,Belarus,Minsk,Minsk,Minsk,СѓР»РёС†Р° РњР°СЂС€Р°Р»Р° Р›СЋСЃРёРєР°,220078,34,53.87419,27.44236
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Matusyevicha,220104,35G,53.9163,27.45839
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Matusyevicha,220104,79,53.91606,27.43922
 BLR,Belarus,Minsk,Minsk,Minsk,praspyekt Masherava,220000,51,53.91152,27.52864
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Myendzyalyeyeva,220037,1,53.90033,27.62307
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Myendzyalyeyeva,220037,23,53.90488,27.613
 BLR,Belarus,Minsk,Minsk,Minsk,Nalibotskaya vulitsa,220055,36,53.92722,27.43203
-BLR,Belarus,Minsk,Minsk,Minsk,проспект Независимости,220114,168,53.94529,27.68849
+BLR,Belarus,Minsk,Minsk,Minsk,РїСЂРѕСЃРїРµРєС‚ РќРµР·Р°РІРёСЃРёРјРѕСЃС‚Рё,220114,168,53.94529,27.68849
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Nyestsyerava,220047,49,53.88316,27.68195
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Nikifarava,220141,2,53.93871,27.68828
 BLR,Belarus,Minsk,Minsk,Minsk,vulitsa Nikifarava,220141,51,53.94161,27.6983

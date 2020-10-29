@@ -3,6 +3,7 @@ import requests
 import json
 import csv
 
+# In[]
 # апи ключ для инфы с HERE
 geocoderApi = herepy.GeocoderApi('bOZAeO552D42cNgIwLvUz0gVvU-JNWTFI9gmIXDL1qY')
 
@@ -50,7 +51,7 @@ for i in range(len(shop_addresses)):
 
 filename = 'full_info.csv'
 
-# запись в файл, кодировка cp-1251 (наверн)
+# запись в файл
 with open(filename, "w", newline="") as file:
     header = ['countryCode', 'countryName', 'state', 'county', 'city', 'street', 'postalCode', 'houseNumber', 'lat',
               'lng']
