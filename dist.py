@@ -29,7 +29,7 @@ distApi = Dist(apikey)
 stores = pd.read_csv('full_info.csv')
 satellites = pd.read_csv('satellites.csv')
 
-stores = stores.head(7)
+# stores = stores.head(7)
 # satellites = satellites.head(3)
 n = len(stores)
 m = len(satellites)
