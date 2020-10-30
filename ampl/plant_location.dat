@@ -1,5 +1,5 @@
-set FACILITIES = {1..19};
-set CUSTOMERS = {1..7};
+param N = 19;
+param M = 7;
 
 param capacity :=
  1    10
@@ -53,8 +53,9 @@ param supplycost : 1 2 3 4 5 6 7 :=
 17  1580  1661  1658   861  1609  1642  1685
 18  1253   747   994   791  1061   714   770
 19   884  1463  1337   980   741   992  1088
+;
 
-param fixcost : 1 2 3 4 5 6 7 :=
+param fixcost :=
  1    90
  2   306
  3   700
@@ -74,3 +75,4 @@ param fixcost : 1 2 3 4 5 6 7 :=
 17   520
 18   293
 19   832
+;
