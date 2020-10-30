@@ -1,10 +1,8 @@
-model /home/ivan/dev/univer/log904-127/last-mile-delivery/ampl/plant_location.mod;
-data /home/ivan/dev/univer/log904-127/last-mile-delivery/ampl/plant_location.dat;
+model plant_location.mod;
+data plant_location.dat;
 
 option solver cplex;
 
-display supplycost > /home/ivan/dev/univer/log904-127/last-mile-delivery/ampl/plant_location.sol;
-
 solve;
 
-display x > /home/ivan/dev/univer/log904-127/last-mile-delivery/ampl/plant_location.sol;
+display x > plant_location.sol;
