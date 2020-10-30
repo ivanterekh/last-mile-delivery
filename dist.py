@@ -60,7 +60,7 @@ for i in range(n):
 np.savetxt("dist.txt", dist, "%6d")
 
 # In[]
-# get time between stores and satelites
+# get time between satelites and stores
 time_sat_store = np.zeros((m, n))
 
 for i in range(m):
@@ -71,7 +71,18 @@ for i in range(m):
 np.savetxt("satelite_to_store_time.txt", time_sat_store, "%5d")
 
 # In[]
-# get distances between stores and satellites
+# get time between stores and satelites
+time_sat_store = np.zeros((m, n))
+
+for i in range(m):
+    for j in range(n):
+        a = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
+        b = satellites['location'][i] 
+        time_sat_store[i][j] = distApi.get_dist(a, b)
+np.savetxt("store_to_satellite_time.txt", time_sat_store, "%5d")
+
+# In[]
+# get distances between satelites and stores
 dist_sat_store = np.zeros((m, n))
 
 for i in range(m):
@@ -80,3 +91,16 @@ for i in range(m):
         b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
         dist_sat_store[i][j] = distApi.get_dist(a, b, duration=False)
 np.savetxt("satellite_to_store_dist.txt", dist_sat_store, "%5d")
+
+
+# In[]
+# get distances between stores and satellites
+dist_sat_store = np.zeros((m, n))
+
+for i in range(m):
+    for j in range(n):
+        a = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
+        b = satellites['location'][i]
+        dist_sat_store[i][j] = distApi.get_dist(a, b, duration=False)
+np.savetxt("store_to_satellite_dist.txt", dist_sat_store, "%5d")
+
