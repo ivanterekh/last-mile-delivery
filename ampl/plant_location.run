@@ -7,5 +7,5 @@ solve;
 
 display x > plant_location.sol;
 display y > plant_location.sol;
-display sum{i in CUSTOMERS, j in FACILITIES}supplycost[j,i]*y[i,j] > plant_location.sol;
+display sum{i in CUSTOMERS, j in FACILITIES}distance[j,i]*y[i,j]*routing_cost*30/3600 > plant_location.sol;
 display sum{j in FACILITIES} fixcost[j]*x[j] > plant_location.sol;
