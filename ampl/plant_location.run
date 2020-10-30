@@ -6,3 +6,6 @@ option solver cplex;
 solve;
 
 display x > plant_location.sol;
+display y > plant_location.sol;
+display sum{i in CUSTOMERS, j in FACILITIES}supplycost[j,i]*y[i,j] > plant_location.sol;
+display sum{j in FACILITIES} fixcost[j]*x[j] > plant_location.sol;
