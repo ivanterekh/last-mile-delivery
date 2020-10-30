@@ -35,6 +35,19 @@ n = len(stores)
 m = len(satellites)
 
 # In[]
+# get time between stores
+time = np.zeros((n, n))
+
+for i in range(n):
+    for j in range(n):
+        if i != j:
+            a = str(stores['lat'][i]) + ", " + str(stores['lng'][i])
+            b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
+            time[i][j] = distApi.get_dist(a, b)
+np.savetxt("time.txt", time, "%5d")
+
+
+# In[]
 # get distances between stores
 dist = np.zeros((n, n))
 
@@ -43,19 +56,27 @@ for i in range(n):
         if i != j:
             a = str(stores['lat'][i]) + ", " + str(stores['lng'][i])
             b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
-            dist[i][j] = distApi.get_dist(a, b)
-print(dist)
+            dist[i][j] = distApi.get_dist(a, b, duration=False)
+np.savetxt("dist.txt", dist, "%6d")
 
 # In[]
-np.savetxt("dist.txt", dist, "%5d")
-
-# In[]
-# get distances between stores and satelites
-distSatStr = np.zeros((m, n))
+# get time between stores and satelites
+time_sat_store = np.zeros((m, n))
 
 for i in range(m):
     for j in range(n):
         a = satellites['location'][i]
         b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
-        distSatStr[i][j] = distApi.get_dist(a, b)
-np.savetxt("satelite_to_store.txt", distSatStr, "%5d")
+        time_sat_store[i][j] = distApi.get_dist(a, b)
+np.savetxt("satelite_to_store_time.txt", time_sat_store, "%5d")
+
+# In[]
+# get distances between stores and satellites
+dist_sat_store = np.zeros((m, n))
+
+for i in range(m):
+    for j in range(n):
+        a = satellites['location'][i]
+        b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
+        dist_sat_store[i][j] = distApi.get_dist(a, b, duration=False)
+np.savetxt("satellite_to_store_dist.txt", dist_sat_store, "%5d")
