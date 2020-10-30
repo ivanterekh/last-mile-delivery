@@ -1,0 +1,35 @@
+{
+  "products": {
+    "products_num": 6,
+    "product-1": {
+      "name": "milk",
+      "measure": "liter",
+      "in_m2": 2000
+    },
+    "product-2": {
+      "name": "cheese",
+      "measure": "kg",
+      "in_m2": 2000
+    },
+    "product-3": {
+      "name": "eggs",
+      "measure": "egg",
+      "in_m2": 27000
+    },
+    "product-4": {
+      "name": "bread",
+      "measure": "kg",
+      "in_m2": 1000
+    },
+    "product-5": {
+      "name": "vegetables",
+      "measure": "kg",
+      "in_m2": 1600
+    },
+    "product-6": {
+      "name": "groats",
+      "measure": "kg",
+      "in_m2": 1600
+    }
+  }
+}

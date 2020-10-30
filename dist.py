@@ -30,7 +30,7 @@ stores = pd.read_csv('full_info.csv')
 satellites = pd.read_csv('satellites.csv')
 
 stores = stores.head(7)
-satellites = satellites.head(3)
+# satellites = satellites.head(3)
 n = len(stores)
 m = len(satellites)
 
@@ -51,11 +51,11 @@ np.savetxt("dist.txt", dist, "%5d")
 
 # In[]
 # get distances between stores and satelites
-distStrSat = np.zeros((m, n))
+distSatStr = np.zeros((m, n))
 
 for i in range(m):
     for j in range(n):
         a = satellites['location'][i]
         b = str(stores['lat'][j]) + ", " + str(stores['lng'][j])
-        distStrSat[i][j] = distApi.get_dist(a, b)
-print(distStrSat)
+        distSatStr[i][j] = distApi.get_dist(a, b)
+np.savetxt("satelite_to_store.txt", distSatStr, "%5d")
