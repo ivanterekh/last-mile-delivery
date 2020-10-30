@@ -1,0 +1,90 @@
+,key_adr,product-1,product-2,product-3,product-4,product-5,product-6,cluster
+0,Minsk Adeskaya vulitsa 18,449,49,666,177,184,21,3
+1,Minsk Aeradromnaya vulitsa 11A,449,65,637,182,148,17,0
+2,Minsk Akhotskaya vulitsa 126,424,57,654,162,140,13,0
+3,Minsk Batanichnaya vulitsa 5A,466,45,656,179,169,14,3
+4,Minsk Il'yanskaya vulitsa 4,480,44,547,180,142,18,2
+5,Minsk Ivanawskaya vulitsa 36,479,59,642,171,211,26,3
+6,Minsk Kal'varyyskaya vulitsa 3,426,59,658,173,158,22,0
+7,Minsk Kal'varyyskaya vulitsa 44,479,53,615,171,142,26,6
+8,Minsk Kazimirawskaya vulitsa 5,1854,212,2384,698,588,72,1
+9,Minsk Kharkawskaya vulitsa 72,377,49,655,171,172,24,0
+10,Minsk Lozhynskaya vulitsa 22,495,55,670,168,151,17,3
+11,Minsk Nalibotskaya vulitsa 36,473,42,606,173,175,25,4
+12,Minsk Slabadskaya vulitsa 131,475,53,653,174,168,18,3
+13,Minsk praspyekt Lyubimava 26,484,52,752,174,143,23,3
+14,Minsk praspyekt Masherava 51,456,55,657,174,150,13,3
+15,Minsk praspyekt Pushkina 3A,497,55,556,178,149,21,2
+16,Minsk praspyekt Pushkina 75,489,49,627,177,156,20,4
+17,Minsk praspyekt Pyeramozhtsaw 89,502,62,595,182,167,23,4
+18,Minsk praspyekt Pyeramozhtsaw 9,477,59,623,183,170,16,4
+19,Minsk vulitsa 50 hod Pyeramohi 5A,465,52,697,170,158,23,3
+20,Minsk vulitsa Adzintsova 65,437,59,636,178,130,19,0
+21,Minsk vulitsa Al'shewskaha 57,470,52,644,168,181,22,3
+22,Minsk vulitsa Alibyehava 13/1,457,53,621,180,257,25,4
+23,Minsk vulitsa Alyesya Bachyly 7,462,59,660,172,113,18,6
+24,Minsk vulitsa Asanaliyeva 44,433,57,639,174,147,20,0
+25,Minsk vulitsa Awezava 7,437,40,654,177,165,17,0
+26,Minsk vulitsa Bahratsiyona 55B,452,55,608,174,135,22,4
+27,Minsk vulitsa Biruzova 11,489,56,597,176,169,22,4
+28,Minsk vulitsa Burdzyeynaha 11,461,80,601,173,165,15,4
+29,Minsk vulitsa Chkalava 9,472,61,666,172,140,24,3
+30,Minsk vulitsa Filimonava 13,465,58,589,173,154,18,4
+31,Minsk vulitsa Haladzyeda 7/2,448,50,548,186,126,15,2
+32,Minsk vulitsa Holubyeva 14B,457,56,560,175,158,18,2
+33,Minsk vulitsa Hyeroyaw 120-y Dyvizi 21,484,54,573,171,200,14,4
+34,Minsk vulitsa Iosifa Hashkyevicha 3,476,50,647,170,169,31,3
+35,Minsk vulitsa Kalinowskaha 23,465,58,615,164,151,17,4
+36,Minsk vulitsa Karbyshava 2,481,46,677,180,150,19,3
+37,Minsk vulitsa Kazintsa 92,422,61,638,180,135,28,0
+38,Minsk vulitsa Kuntsawshchyna 19,465,53,602,175,153,16,4
+39,Minsk vulitsa Labanka 22,478,59,616,174,168,28,4
+40,Minsk vulitsa Lyawkova 9,462,61,612,189,153,24,4
+41,Minsk vulitsa Maksima Bahdanovicha 116,389,48,637,176,131,20,0
+42,Minsk vulitsa Maksima Bahdanovicha 134,439,59,647,175,152,14,0
+43,Minsk vulitsa Maksima Bahdanovicha 89,441,51,536,177,99,22,2
+44,Minsk vulitsa Mantazhnikaw 2,480,59,569,172,152,24,2
+45,Minsk vulitsa Matusyevicha 35G,462,64,636,177,172,23,4
+46,Minsk vulitsa Matusyevicha 79,434,48,662,173,180,2,3
+47,Minsk vulitsa Mazurava 24,453,42,639,175,132,23,6
+48,Minsk vulitsa Myendzyalyeyeva 1,476,66,571,159,144,20,2
+49,Minsk vulitsa Myendzyalyeyeva 23,464,52,659,181,161,19,3
+50,Minsk vulitsa Nikifarava 2,457,64,568,175,189,24,2
+51,Minsk vulitsa Nikifarava 51,414,57,579,176,163,15,2
+52,Minsk vulitsa Nyestsyerava 49,447,51,683,177,88,22,6
+53,Minsk vulitsa Plyakhanava 38,434,59,632,172,158,23,0
+54,Minsk vulitsa Prushynskikh 2,445,57,619,179,173,19,4
+55,Minsk vulitsa Prytytskaha 110,482,58,658,177,186,16,3
+56,Minsk vulitsa Prytytskaha 29,478,46,582,180,177,17,4
+57,Minsk vulitsa Prytytskaha 6,487,62,645,172,184,21,3
+58,Minsk vulitsa Pulikhava 3,495,55,635,168,152,20,6
+59,Minsk vulitsa Pyatra Hlyebki 120,468,60,563,172,148,17,2
+60,Minsk vulitsa Rotmistrava 42,424,66,598,173,114,18,0
+61,Minsk vulitsa Shpilyewskaha 60,520,48,620,172,107,20,6
+62,Minsk vulitsa Soltysa 62,453,48,426,177,182,15,5
+63,Minsk vulitsa Staravilyenski Trakt 28,479,48,646,170,121,24,6
+64,Minsk vulitsa Staravilyenski Trakt 77,484,54,570,168,129,27,2
+65,Minsk vulitsa Suvyazistaw 6,395,54,662,170,173,18,0
+66,Minsk vulitsa Ubarevicha 16,459,56,644,180,124,21,6
+67,Minsk vulitsa Uladzislava Halubka 2,413,51,671,176,133,22,0
+68,Minsk vulitsa Vanyeyeva 4,460,52,637,168,132,19,6
+69,Minsk vulitsa Varanyanskaha 17,507,58,635,172,138,24,6
+70,Minsk vulitsa Vyery Kharuzhay 31,446,60,687,184,206,17,3
+71,Minsk vulitsa Yakuba Kolasa 36,479,57,636,174,93,24,6
+72,Minsk vulitsa Yakubava 64,487,47,606,176,184,22,4
+73,Minsk vulitsa Yakubowskaha 32,398,38,612,169,149,21,0
+74,Minsk vulitsa Yana Chachota 2,411,57,625,176,168,19,0
+75,Minsk vulitsa Yanki Brylya 22,459,50,589,171,153,22,2
+76,Minsk vulitsa Yankowskaha 44,472,60,586,182,157,20,4
+77,Minsk vulitsa Yasyenina 141,426,67,552,178,189,16,2
+78,Minsk vulitsa Yasyenina 76,465,54,599,177,155,15,4
+79,Minsk vulitsa Zhylunovicha 41,494,53,606,179,150,18,4
+80,Minsk проспект Дзержинского 104,449,53,631,176,182,21,4
+81,Minsk проспект Независимости 168,498,64,633,180,137,17,6
+82,Minsk проспект Независимости 48,477,54,618,170,186,15,4
+83,Minsk проспект Независимости 74,480,55,677,169,177,22,3
+84,Minsk проспект Рокоссовского 145б,460,47,554,173,162,22,2
+85,Minsk проспект Рокоссовского 99,446,55,593,174,149,22,2
+86,Minsk улица Максима Горецкого 73,482,68,674,176,160,19,3
+87,Minsk улица Маршала Люсика 34,491,56,619,178,136,21,6
+88,Sosny vulitsa Pawlowskaha 52A,458,65,596,177,154,17,4
