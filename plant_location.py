@@ -15,13 +15,13 @@ with open('reference.json') as ref_file:
 # In[]
 
 # satellites = satellites.head(3)
-stores = stores.head(7)
+# stores = stores.head(7)
 n = len(satellites)
 m = len(stores)
 
 with open(datfile, "w", encoding="utf-8") as file:
-    file.write(f"set FACILITIES = {{1..{n}}};\n")
-    file.write(f"set CUSTOMERS = {{1..{m}}};\n\n")
+    file.write(f"param N = {n};\n")
+    file.write(f"param M = {m};\n\n")
 
 # In[]
 
@@ -48,17 +48,24 @@ with open(datfile, "a", encoding="utf-8") as file:
 
 with open(datfile, "a", encoding="utf-8") as file:
     store_idxs = " ".join(map(str, [i for i in range(1, m + 1)]))
-    file.write(f"param supplycost : {store_idxs} :=\n")
-    with open('satelite_to_store.txt', "r", encoding="utf-8") as dist_file:
+    file.write(f"param distance : {store_idxs} :=\n")
+    with open('satelite_to_store_time.txt', "r", encoding="utf-8") as dist_file:
         i = 1
         for line in dist_file:
             file.write("%2d %s" % (i, line))
             i += 1
-    file.write("\n")
+    file.write(";\n\n")
 
 # In[]
 
 with open(datfile, "a", encoding="utf-8") as file:
-    file.write(f"param fixcost : {store_idxs} :=\n")
+    file.write(f"param fixcost :=\n")
     for i in range(n):
         file.write("%2d %5d\n" % (i+1, satellites['cost'][i]))
+    file.write(";\n\n")
+
+
+# In[12]
+
+with open(datfile, "a", encoding="utf-8") as file:
+    file.write("param routing_cost = 12;\n")
