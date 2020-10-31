@@ -1,6 +1,10 @@
-set FACILITIES;#identification m facilities (satellites)
-set CUSTOMERS;#identification n customers
-set DEPOTS;#identification of nn depots (CDC)
+param N;
+param M;
+param L;
+
+set FACILITIES = {1..N};#identification m facilities (satellites)
+set CUSTOMERS = {1..M};#identification n customers
+set DEPOTS = {1..L};#identification of nn depots (CDC)
 
 param capacity {FACILITIES}>=0;#capacity capacity bi of facilities
 param demand {CUSTOMERS}>=0;#customers’ demands aj
