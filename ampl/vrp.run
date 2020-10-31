@@ -1,0 +1,15 @@
+model vrp.mod;
+data vrp.dat;
+
+option solver cplex;
+option cplex_options 'sensitivity treelimit=256';
+option omit_zero_rows 1;
+
+solve;
+
+display Total_Cost > vrp.sol;
+display Use > vrp.sol;
+display Delivery > vrp.sol;
+display {i in 0..N, j in 0..N, k in 1..V: i<>j} Delivery[i,j,k] > vrp.sol;
+
+exit;
