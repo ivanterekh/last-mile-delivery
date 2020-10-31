@@ -1,0 +1,10 @@
+model two_echelon_location.mod;
+data two_echelon_location.dat;
+
+option solver cplex;
+
+solve;
+
+display x > two_echelon_location.sol;
+display y > two_echelon_location.sol;
+display z > two_echelon_location.sol;

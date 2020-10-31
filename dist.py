@@ -28,11 +28,13 @@ distApi = Dist(apikey)
 
 stores = pd.read_csv('full_info.csv')
 satellites = pd.read_csv('satellites.csv')
+depots = pd.read_csv('depots.csv')
 
 # stores = stores.head(7)
 # satellites = satellites.head(3)
 n = len(stores)
 m = len(satellites)
+l = len(depots)
 
 # In[]
 # get time between stores
@@ -105,3 +107,17 @@ for i in range(n):
         time_store_sat[i][j] = distApi.get_dist(a, b, duration=True)
 np.savetxt("store_to_satellite_dist.txt", dist_store_sat, "%6d")
 np.savetxt("store_to_satellite_time.txt", time_store_sat, "%5d")
+
+# In[]
+# get time and distances between stores and satellites
+dist_dep_sat = np.zeros((l, m))
+time_dep_sat = np.zeros((l, m))
+
+for i in range(l):
+    for j in range(m):
+        a = depots['location'][i]
+        b = satellites['location'][j]
+        dist_dep_sat[i][j] = distApi.get_dist(a, b, duration=False)
+        time_dep_sat[i][j] = distApi.get_dist(a, b, duration=True)
+np.savetxt("dep_to_satellite_dist.txt", dist_dep_sat, "%6d")
+np.savetxt("dep_to_satellite_time.txt", time_dep_sat, "%5d")
