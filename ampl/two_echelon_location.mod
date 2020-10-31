@@ -33,3 +33,6 @@ subject to facilities_allocation {i in FACILITIES}:
 
 subject to facility_depot{i in FACILITIES, k in DEPOTS}:
     y[i,k]<=z[k];
+
+subject to one_depot:
+    sum{k in DEPOTS} z[k] = 1;
