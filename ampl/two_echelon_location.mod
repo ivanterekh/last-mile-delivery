@@ -20,7 +20,7 @@ var y {FACILITIES,DEPOTS} binary;#yik =1 facility i open and served from depot k
 var z {DEPOTS}binary;#zk=1 depot k is open
 
 minimize Total_Cost:
-    sum{i in FACILITIES, j in CUSTOMERS, k in DEPOTS } x[i,j]*dist_from_sat[i,j]*30/3600*cost_from_sat+sum{i in FACILITIES, k in DEPOTS} y[i,k]*dist_from_dep[k,i]*cost_from_dep+sum{k in DEPOTS} cost_dep[k]*z[k];
+    sum{i in FACILITIES, j in CUSTOMERS, k in DEPOTS } x[i,j]*dist_from_sat[i,j]*30/3600*cost_from_sat+sum{i in FACILITIES, k in DEPOTS} y[i,k]*dist_from_dep[k,i]*cost_from_dep*5/3600+sum{k in DEPOTS} cost_dep[k]*z[k];
 
 subject to capacity_constraint {i in FACILITIES, k in DEPOTS}:
     sum {j in CUSTOMERS} demand[j]*x[i,j]<=capacity[i];
@@ -33,6 +33,3 @@ subject to facilities_allocation {i in FACILITIES}:
 
 subject to facility_depot{i in FACILITIES, k in DEPOTS}:
     y[i,k]<=z[k];
-
-subject to one_depot:
-    sum{k in DEPOTS} z[k] = 1;
