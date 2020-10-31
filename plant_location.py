@@ -38,8 +38,8 @@ with open(datfile, "a", encoding="utf-8") as file:
     week = [f"day-{i}" for i in range(1, 8)]
     for i in range(m):
         full_demand = 0.0
-        for j in range(1, products_num+1):
-            convert = ref["products"][f"product-{j}"]['in_m2']
+        for j in range(products_num):
+            convert = ref["products"][f"product-{j+1}"]['in_m2']
             full_demand += sum(demand[week].loc[i*products_num+j]) / convert
         file.write("%2d %5f\n" % (i+1, full_demand))
     file.write(";\n\n")
